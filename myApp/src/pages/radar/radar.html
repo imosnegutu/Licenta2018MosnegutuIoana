@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Alfabet</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="radar-page">
+    <div class="question-number" [innerHtml]="questionNumberFront | keepHtml">Intrebarea 1/5</div>
+    <div class="image-container" id="question-image"></div>
+    <div class="answer-container">
+        <div id="answer-1" class="answer" (click) = 'answerQuestion(1);'>A</div>
+        <div id="answer-2" class="answer" (click) = 'answerQuestion(2);'>B</div>
+        <div id="answer-3" class="answer" (click) = 'answerQuestion(3);'>C</div>
+        <div id="answer-4" class="answer" (click) = 'answerQuestion(4);'>D</div>
+
+    </div>
+    <div class="next-button" id="next-button" (click) = 'nextQuestion();'>Mai departe</div>
+
+
+</ion-content>

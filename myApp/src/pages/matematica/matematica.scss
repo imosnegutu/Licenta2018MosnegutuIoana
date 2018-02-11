@@ -1,0 +1,119 @@
+
+.matematica-page{
+     background-color: #89CFF0 ;
+    
+}
+.question-number{
+    color:white;
+    
+}
+.next-button{
+    height:30px;
+    width:100px;
+    border:1px solid white;
+    margin:0 auto;
+    margin-top:20px;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    line-height:27px;
+    
+    
+}
+
+.color-container{
+    position:relative;
+    height:250px;
+    width:70%;
+    margin:0 auto;
+    padding:10px;
+    background-color:transparent;
+    margin-top:50px;
+    border-radius:10px;
+
+    background-size:contain;
+    background-repeat: no-repeat;
+    border:2px dashed white;
+    
+}
+
+.answer-containerColor{
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    height:130px;
+    margin-top:50px;
+    border:1px solid white;
+    border-radius:10px;
+  
+}
+.answerMatematica:first-of-type{
+    position:relative;
+    height:50px;
+    width:60px;
+    display:inline-block;
+    margin-top:40px;
+    border:1px solid white;
+    text-align:center;
+    color:white;
+    line-height:50px;
+    margin-left:10px;
+    
+}
+.answerMatematica{
+    position:relative;
+    height:50px;
+    width:60px;
+    display:inline-block;
+    margin-top:40px;
+    border:1px solid white;
+    text-align:center;
+    color:white;
+    line-height:50px;
+    margin-left:10px;
+    
+}
+
+.first-number{
+    
+    width:60px;
+    height:50px;
+    font-size:50px;
+    color:white;
+    margin-left:100px;
+    margin-top:20px;
+     position:relative;
+    display:inline-block;
+}
+
+.second-number{
+    
+    width:60px;
+    height:50px;
+    font-size:50px;
+    color:white;
+    margin-left:200px;
+    position:relative;
+  
+    margin-top:-49px;
+}
+
+.matematica-question-container{
+    border:1px solid white;
+    width:100%;
+    height:120px;
+    margin-top:50px;
+}
+
+.operation-sign{
+   
+    width:30px;
+    height:50px;
+    font-size:50px;
+    color:white;
+    
+    position:relative;
+    display:inline-block;
+    margin-top:-100px;
+    
+}

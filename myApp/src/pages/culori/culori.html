@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Culori</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="culori-page">
+    <div class="question-number" [innerHtml]="questionNumberFront | keepHtml">Intrebarea 1/5</div>
+    <div class="color-container" id="question-image"></div>
+    <div class="answer-containerColor">
+        <div id="answerColor-1" class="answerColor" (click) = 'answerQuestionColor(1);'>A</div>
+        <div id="answerColor-2" class="answerColor" (click) = 'answerQuestionColor(2);'>B</div>
+        <div id="answerColor-3" class="answerColor" (click) = 'answerQuestionColor(3);'>C</div>
+        <div id="answerColor-4" class="answerColor" (click) = 'answerQuestionColor(4);'>D</div>
+
+    </div>
+    <div class="next-button" id="next-button" (click) = 'nextQuestionColor();'>Mai departe</div>
+
+
+</ion-content>

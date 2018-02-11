@@ -1,0 +1,363 @@
+.profile-page {
+    background-color: #89CFF0;
+}
+
+.player-basic-info {
+    text-align: center;
+}
+
+.player-name {
+    color: #F2D170;
+    font-size: 15px;
+}
+
+.player-level {
+    color: #F5F7F4;
+    padding: 5px;
+}
+
+.player-calling-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+ 
+    background-size: cover;
+    border: 1px solid #F2D170;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.player-items {
+    margin-top: 40px;
+}
+
+.player-helmet {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0 auto;
+    background-size:cover;
+ 
+
+}
+
+.player-necklace {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0 auto;
+     background-size:cover;
+    margin-top: 5%;
+
+}
+
+.player-weapon-left {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: 5%;
+      background-size:cover;
+    display: inline-block;
+
+}
+
+.player-bracelet-left {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: 5%;
+    margin-left: 8%;
+    background-size:cover;
+    display: inline-block;
+   
+}
+
+.player-body-armor {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+      background-size:cover;
+    margin: 0 auto;
+    margin-top: -45px;
+ 
+}
+
+.player-bracelet-right {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: -40px;
+     background-size:cover;
+    margin-left: 70%;
+
+}
+
+.player-weapon-right {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: -40px;
+    margin-left: 90%;
+      background-size:cover;
+ 
+
+}
+
+.player-pants {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top: 5%;
+      background-size:cover;
+
+
+}
+
+.player-boots {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    margin: 0 auto;
+     background-size:cover;
+    margin-top: 5%;
+   
+}
+.player-backpack {
+    width: 40px;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: -40px;
+    background-image: url(../../assets/img/backpack.jpg);
+    background-size: cover;
+   
+    border: 1px solid white;
+}
+.player-stats {
+margin-left:40%;
+    margin-top: 20px;
+    color: #F2D170;
+    padding: 5px;
+    font-size: 17px;
+    padding-bottom:40px;
+}
+
+.stat {
+margin-left:20%;
+    color: #F5F7F4;
+    width:300px;
+}
+
+.stat-text {
+    display: inline-block;
+    padding: 5px;
+}
+
+.stat-value {
+    display: inline-block;
+    padding: 5px;
+    color: #F2D170;
+}
+
+.stat-value-bonus {
+    display: inline-block;
+    padding: 5px;
+    color: #87755D;
+    font-size: 12px;
+}
+
+.stat-bar {
+    display: inline-block;
+    padding: 5px;
+    float:right;
+    margin-right:25%;
+}
+
+#fatigue-progress,
+#health-progress,
+#chakra-progress {
+    background-color: grey;
+    border-radius: 13px;
+    height: 10px;
+    width: 100px;
+    display: inline-block;
+}
+
+#fatigue-progress > div {
+    background-color: #F2D170;
+    border-radius: 10px;
+    width: 80%;
+    height: 10px;
+}
+
+#health-progress > div {
+    background-color: #F2D170;
+    border-radius: 10px;
+    width: 50%;
+    height: 10px;
+}
+
+#chakra-progress > div {
+    background-color: #F2D170;
+    border-radius: 10px;
+    width: 50%;
+    height: 10px;
+}
+
+.itemPopover {
+ 
+    width: 220px;
+    height: 400px;
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    background-color: #162216;
+
+    opacity: 0.9;
+    border: 2px dashed #87755D;
+    overflow:auto;
+}
+
+#item_icon{
+    margin-top:10px;
+    width: 40px;
+    height: 40px;
+    margin-left:10px;
+
+    background-image: url(../../assets/img/backpack.jpg);
+    background-size: cover;
+   
+    border: 2px solid white;
+
+
+}
+
+#item_name{
+    color:#F2D170;
+    margin-left:70px;
+    z-index:2;
+    margin-top:-35px;
+
+}
+#item_rarity{
+    color:#cb72d8;
+    margin-left:110px;
+    z-index:2;
+    font-size:13px;
+}
+
+#item_level{
+color:#F2D170;
+float:right;
+padding:10px;
+ font-size:13px;
+
+}
+#item_class{
+color:#F2D170;
+ font-size:13px;
+ padding:10px;
+
+}
+
+#item_description{
+color:#F2D170;
+padding:10px;
+font-size:13px;
+
+
+
+}
+
+#item_attributes{
+color: #cb72d8;
+padding:15px;
+font-size:13px;
+text-align:center;
+margin:0 auto;
+
+}
+.item_attribute_name{
+display:inline-block;
+
+}
+.item_attribute_value{
+display:inline-block;
+
+}
+
+
+#gems_text{
+color:#F2D170;
+padding:10px;
+
+
+}
+.gem{
+    padding:10px;
+
+}
+.gem_icon{
+    border:2px solid white;
+    width:40px;
+    height:40px;
+    padding:10px;
+    background-color:grey;
+}
+.gem_name{
+ color:#F2D170;
+ margin-left:50px;
+  z-index:2;
+    margin-top:-45px;
+    font-size:13px;
+
+}
+.gem_effect{
+color:#F2D170;
+  font-size:10px;
+margin-left:50px;
+}
+
+
+
+
+
+.inventoryPopover {
+
+    width: 220px;
+    height: 400px;
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    background-color: #162216;
+
+    opacity: 0.9;
+    border: 2px dashed #87755D;
+    overflow:auto;
+}
+
+#inventory_items{
+color:white;
+margin-left:10px;
+margin-top:20px;
+
+
+}
+.inventory_row{
+    margin-top:10px;
+
+}
+
+.inventory_item{
+    width:40px;
+    height:40px;
+    border: 2px solid white;
+    background-color:grey;
+   display:inline-block;
+   margin-left:4px;
+
+}

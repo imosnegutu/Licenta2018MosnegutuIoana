@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Misiunile mele</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+     Misiuni neterminate
+    </ion-list-header>
+      <div  id = "listaMisiuni" [innerHtml]="unfinishedMissions | keepHtml">
+
+  
+
+   
+          </div>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Misiuni finalizate
+    </ion-list-header>
+
+     <div  [innerHtml]="finishedMissions | keepHtml">
+
+  
+
+   
+          </div>
+  </ion-list>
+</ion-content>

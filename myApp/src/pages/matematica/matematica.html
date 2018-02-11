@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Matematica</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="matematica-page">
+    <div class="question-number" [innerHtml]="questionNumberFront | keepHtml">Intrebarea 1/5</div>
+    <div class="matematica-question-container">
+    <div class="first-number" id="first-number">5</div>
+        <div class="operation-sign" id="operation-sign">+</div>
+        <div class="second-number" id="second-number">3</div>
+        </div>
+    <div class="answer-containerColor">
+        <div id="answerMatematica-1" class="answerMatematica" (click) = 'answerQuestionMatematica(1);'>A</div>
+        <div id="answerMatematica-2" class="answerMatematica" (click) = 'answerQuestionMatematica(2);'>B</div>
+        <div id="answerMatematica-3" class="answerMatematica" (click) = 'answerQuestionMatematica(3);'>C</div>
+        <div id="answerMatematica-4" class="answerMatematica" (click) = 'answerQuestionMatematica(4);'>D</div>
+
+    </div>
+    <div class="next-button" id="next-button" (click) = 'nextQuestionMatematica();'>Mai departe</div>
+
+
+</ion-content>

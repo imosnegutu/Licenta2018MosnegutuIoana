@@ -1,0 +1,75 @@
+
+.radar-page{
+     background-color: #89CFF0 ;
+    
+}
+.question-number{
+    color:white;
+    
+}
+.next-button{
+    height:30px;
+    width:100px;
+    border:1px solid white;
+    margin:0 auto;
+    margin-top:20px;
+    border-radius:10px;
+    color:white;
+    text-align: center;
+    line-height:27px;
+    
+    
+}
+
+.image-container{
+    position:relative;
+    height:250px;
+    width:70%;
+    margin:0 auto;
+    padding:10px;
+    background-color:transparent;
+    margin-top:50px;
+    border-radius:10px;
+    background-image:url('../../assets/img/frog-icon.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    border:2px dashed white;
+    
+}
+
+.answer-container{
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    height:130px;
+    margin-top:50px;
+    border:1px solid white;
+    border-radius:10px;
+  
+}
+.answer:first-of-type{
+    position:relative;
+    height:50px;
+    width:50px;
+    display:inline-block;
+    margin-top:40px;
+    border:1px solid white;
+    text-align:center;
+    color:white;
+    line-height:50px;
+    margin-left:30px;
+    
+}
+.answer{
+    position:relative;
+    height:50px;
+    width:50px;
+    display:inline-block;
+    margin-top:40px;
+    border:1px solid white;
+    text-align:center;
+    color:white;
+    line-height:50px;
+    margin-left:10px;
+    
+}
