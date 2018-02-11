@@ -63,7 +63,7 @@ export class LoginPage {
 
     var data = 'email=' + this.user.email + '&password=' + this.user.password;
 
-    this.http.post("http://localhost:8080/users/v1/login", data, options)
+    this.http.post("http://localhost:3131/users/v1/login", data, options)
       .subscribe(data => {
        var user = (JSON.parse(data['_body']));
          if (user.email != null)

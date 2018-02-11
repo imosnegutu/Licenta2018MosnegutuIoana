@@ -64,7 +64,7 @@ export class ColorsPage {
 
         var data = '';
 
-        this.http.get("http://localhost:8080/colors/v1/get-suite", options)
+        this.http.get("http://localhost:3131/colors/v1/get-suite", options)
             .subscribe(data => {
                 this.colorQuestions = data['_body'];
                 this.colorQuestions = JSON.parse(this.colorQuestions);
@@ -86,7 +86,7 @@ export class ColorsPage {
 
 
     loadQuestionColor() {
-        document.getElementById('question-image').style.backgroundColor = this.colorQuestions[this.questionNumber - 1].cssColor;
+        document.getElementById('culori-image').style.backgroundColor = this.colorQuestions[this.questionNumber - 1].cssColor;
 
 
 

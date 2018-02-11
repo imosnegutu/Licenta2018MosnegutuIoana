@@ -3,11 +3,14 @@ package ro.kidslearn.entities;
 public class AlphabetQuestion {
     private int id;
 
-
     private String image;
+
     private String correctLetter;
+
     private String option1;
+
     private String option2;
+
     private String option3;
 
     public String getOption1() {

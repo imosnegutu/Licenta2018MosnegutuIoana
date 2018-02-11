@@ -43,7 +43,7 @@ ionViewDidLoad() {
 
     var data = '';
 
-    this.http.get("http://localhost:8080/alphabet/v1/get-suite", options)
+    this.http.get("http://localhost:3131/alphabet/v1/get-suite", options)
       .subscribe(data => {
         this.alphabetQuestions = data['_body'];
         this.alphabetQuestions = JSON.parse(this.alphabetQuestions);

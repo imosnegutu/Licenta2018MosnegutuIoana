@@ -43,7 +43,7 @@ export class RegisterPage {
 
     var data = 'email=' + this.user.email + '&password=' + this.user.password;
 
-    this.http.post("http://localhost:8080/users/v1/register", data, options)
+    this.http.post("http://localhost:3131/users/v1/register", data, options)
       .subscribe(data => {
       
         

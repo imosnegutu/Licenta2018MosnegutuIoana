@@ -7,9 +7,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-
 public class DBConnection {
     private static Connection conn = null;
+
     private static Logger logger = LoggerFactory.getLogger(DBConnection.class);
 
     public static Connection getConnection() {
@@ -24,16 +24,18 @@ public class DBConnection {
             if (conn == null) {
 
                 conn = DriverManager.getConnection("jdbc:mysql://" + Configuration.DATABASE_URL + ":"
-                        + Configuration.DATABASE_PORT + "/" + Configuration.DATABASE_NAME + "?" + "user="
-                        + Configuration.DATABASE_USER + "&password=" + Configuration.DATABASE_PASSWORD + "&autoReconnect=true");
+                    + Configuration.DATABASE_PORT + "/" + Configuration.DATABASE_NAME + "?" + "user="
+                    + Configuration.DATABASE_USER + "&password=" + Configuration.DATABASE_PASSWORD
+                    + "&autoReconnect=true");
 
                 logger.info("Created new DataBase Connection at " + Configuration.DATABASE_URL);
             }
             if (conn.isClosed()) {
 
                 conn = DriverManager.getConnection("jdbc:mysql://" + Configuration.DATABASE_URL + ":"
-                        + Configuration.DATABASE_PORT + "/" + Configuration.DATABASE_NAME + "?" + "user="
-                        + Configuration.DATABASE_USER + "&password=" + Configuration.DATABASE_PASSWORD + "&autoReconnect=true");
+                    + Configuration.DATABASE_PORT + "/" + Configuration.DATABASE_NAME + "?" + "user="
+                    + Configuration.DATABASE_USER + "&password=" + Configuration.DATABASE_PASSWORD
+                    + "&autoReconnect=true");
             }
 
         } catch (SQLException ex) {

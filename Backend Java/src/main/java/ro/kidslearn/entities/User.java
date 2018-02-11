@@ -2,7 +2,9 @@ package ro.kidslearn.entities;
 
 public class User {
     private int id;
+
     private String email;
+
     private String password;
 
     public int getId() {

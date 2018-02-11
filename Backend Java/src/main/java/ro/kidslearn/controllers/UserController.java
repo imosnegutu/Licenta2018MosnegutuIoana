@@ -12,11 +12,10 @@ import java.sql.ResultSet;
 public class UserController {
 
     public static Logger logger = LoggerFactory.getLogger(UserController.class);
+
     public static Connection conn = (Connection) DBConnection.getConnection();
 
-
     public static User loginUser(String email, String password) {
-
 
         PreparedStatement stmt;
         ResultSet rs;
@@ -33,24 +32,16 @@ public class UserController {
                 u.setId(rs.getInt(1));
                 u.setEmail(email);
 
-
                 logger.info("Found user with id " + u.getId());
                 return u;
             }
-
         } catch (Exception e) {
             logger.error(e.getMessage());
-
-
         }
         return null;
-
-
     }
 
     public static void registerUser(String email, String password) {
-
-
         PreparedStatement stmt;
         ResultSet rs;
 
@@ -58,15 +49,10 @@ public class UserController {
             stmt = conn.prepareStatement("INSERT INTO users(email,password) VALUES (?,?)");
             stmt.setString(1, email);
             stmt.setString(2, password);
-
             stmt.executeUpdate();
-
 
         } catch (Exception e) {
             logger.error(e.getMessage());
-
-
         }
-
     }
 }

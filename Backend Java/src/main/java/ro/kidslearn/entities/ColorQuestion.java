@@ -2,10 +2,15 @@ package ro.kidslearn.entities;
 
 public class ColorQuestion {
     private int id;
+
     private String cssColor;
+
     private String answer1;
+
     private String answer2;
+
     private String answer3;
+
     private String correctAnswer;
 
     public int getId() {

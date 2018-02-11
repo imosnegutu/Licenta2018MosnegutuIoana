@@ -16,15 +16,28 @@ public class AlphabetGameHelper {
         ArrayList<AlphabetQuestion> questionSuite = new ArrayList<AlphabetQuestion>();
         int randomNum;
         for (int i = 0; i < 5; i++) {
-
             randomNum = ThreadLocalRandom.current().nextInt(0, questions.size());
 
             questionSuite.add(questions.get(randomNum));
 
+            String letter = genereateRandomLetter();
+            while (questionSuite.get(i).getCorrectLetter().equals(letter)) {
+                letter = genereateRandomLetter();
+            }
+            questionSuite.get(i).setOption1(letter);
 
-            questionSuite.get(i).setOption1(genereateRandomLetter());
-            questionSuite.get(i).setOption2(genereateRandomLetter());
-            questionSuite.get(i).setOption3(genereateRandomLetter());
+            while (questionSuite.get(i).getCorrectLetter().equals(letter) || questionSuite.get(i).getOption1()
+                .equals(letter)) {
+                letter = genereateRandomLetter();
+            }
+            questionSuite.get(i).setOption2(letter);
+
+            while (questionSuite.get(i).getCorrectLetter().equals(letter) || questionSuite.get(i).getOption1()
+                .equals(letter) || questionSuite.get(i).getOption2().equals(letter)) {
+                letter = genereateRandomLetter();
+            }
+            questionSuite.get(i).setOption3(letter);
+
             questions.remove(randomNum);
         }
 
@@ -32,7 +45,6 @@ public class AlphabetGameHelper {
     }
 
     private static String genereateRandomLetter() {
-
         Random r = new Random();
         char c = (char) (r.nextInt(26) + 'a');
         return c + "";
